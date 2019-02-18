@@ -1,0 +1,9 @@
+version: "3"
+services:
+  panbb:
+    build: .
+    container_name: 'panbb'
+    ports:
+      - 8080:80
+    volumes: 
+      - ./data/panbb:/panbb
